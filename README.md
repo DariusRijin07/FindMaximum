@@ -12,7 +12,9 @@ To write a program to find the maximum of a list of numbers.
 
 i)	# To find the maximum of marks using the list method sort.
 ```Python
-![py 1](https://github.com/DariusRijin07/FindMaximum/assets/138849120/58bc729f-c126-4785-a669-8182577f8ae5)
+def max_marks(array):
+    array.sort()
+    return array[-1]
 
 
 
@@ -20,7 +22,8 @@ i)	# To find the maximum of marks using the list method sort.
 
 ii)	# To find the maximum marks using the list method max().
 ```Python
-![py2](https://github.com/DariusRijin07/FindMaximum/assets/138849120/e4903d29-8702-438c-8f58-97f6d0cbd523)
+def max_marks(array):
+    return max(array)
 
 
 
@@ -28,7 +31,12 @@ ii)	# To find the maximum marks using the list method max().
 
 iii) # To find the maximum marks without using builtin functions.
 ```Python
-![py3](https://github.com/DariusRijin07/FindMaximum/assets/138849120/9e437596-6c7a-477b-a83e-d74b5e1a326c)
+def max_marks(array):
+    max1=array[0]
+    for i in range(1,len(array)):
+        if max1<array[i]:
+            max1=array[i]
+    return max1
 
 
 
@@ -38,6 +46,8 @@ iii) # To find the maximum marks without using builtin functions.
 
 ## Output:
 ![py3](https://github.com/DariusRijin07/FindMaximum/assets/138849120/0c54bb44-c235-4902-b9ef-1324018efb5a)
+![py 1](https://github.com/DariusRijin07/FindMaximum/assets/138849120/8b7ad058-218b-46a9-a387-f7c831b2c66c)
+![py2](https://github.com/DariusRijin07/FindMaximum/assets/138849120/24357f67-bc14-4211-b74c-e81bfa0d838f)
 
 ## Result:
 Thus the program to find the maximum of given numbers from the list is written and verified using python programming.
